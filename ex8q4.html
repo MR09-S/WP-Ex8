@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>23BCE1837</title>
+    <script>
+        function calculateLabourCost() {
+            const ratePerHour = 45;
+            let hoursWorked = parseFloat(prompt("Enter hours worked:"));
+            let costOfMaterials = parseFloat(prompt("Enter cost of materials:"));
+            
+            let labourCost = ratePerHour * hoursWorked;
+            let totalCharge = labourCost + costOfMaterials;
+            
+            alert("Labour Cost: Rs." + labourCost.toFixed(2) + "\nTotal Charge: Rs." + totalCharge.toFixed(2));
+        }
+    </script>
+</head>
+<body onload="calculateLabourCost()">
+</body>
+</html>

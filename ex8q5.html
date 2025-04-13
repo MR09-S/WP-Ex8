@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>23BCE1837</title>
+    <style>
+        .reg-box {
+            border: 2px solid red;
+            background-color: lightgrey;
+            display: inline-block;
+            padding: 5px;
+            font-weight: bold;
+            color: black;
+        }
+        .name-box {
+            border: 2px solid black;
+            font-weight: bold;
+            color: red;
+            display: inline-block;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    var regNo = prompt("Enter your registration number:");
+    var name = prompt("Enter your name:");
+
+    document.write('<p class="reg-box">' + regNo + '</p>');
+    document.write('<p id="nameDisplay" class="name-box"></p>');
+    document.getElementById("nameDisplay").innerHTML = "*"+ name +"*";
+</script>
+
+</body>
+</html>

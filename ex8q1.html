@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>23BCE1837</title>
+    <script>
+        function calculate() {
+            let num1 = parseFloat(prompt("Enter first number:"));
+            let num2 = parseFloat(prompt("Enter second number:"));
+            let operation = prompt("Enter operation (+, -, *, /, %):");
+            let result;
+            
+            switch (operation) {
+                case '+': result = num1 + num2; break;
+                case '-': result = num1 - num2; break;
+                case '*': result = num1 * num2; break;
+                case '/': result = num1 / num2; break;
+                case '%': result = num1 % num2; break;
+                default: alert("Invalid operation"); return;
+            }
+            
+            alert("Result: " + result);
+        }
+    </script>
+</head>
+<body onload="calculate()">
+</body>
+</html>

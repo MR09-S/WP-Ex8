@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>23BCE1837</title>
+    <script>
+        function confirmStudentStatus() {
+            let isStudent = confirm("Are you a student?");
+            if (isStudent) {
+                let regNumber = prompt("Enter your registration number:");
+                alert("Registration number: " + regNumber);
+            } else {
+                alert("Access denied. Students only.");
+            }
+        }
+    </script>
+</head>
+<body onload="confirmStudentStatus()">
+</body>
+</html>
